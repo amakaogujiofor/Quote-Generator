@@ -3,7 +3,7 @@ const quoteContainer = document.getElementById("quote-container");
 const authorText = document.getElementById("author");
 const quoteText = document.getElementById("quote");
 const twitterBtn = document.getElementById("twitter");
-const newQuote = document.getElementById("new-quote");
+const newQuoteBtn = document.getElementById("new-quote");
 
 // API Quotes
 let apiQuotes = [];
@@ -47,6 +47,9 @@ function tweetQuote() {
   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
   window.open(twitterBtn, "_blank");
 }
+
+twitterBtn.addEventListener("click", tweetQuote);
+newQuoteBtn.addEventListener("click", newQuotes);
 
 // On load
 getQuotes();
