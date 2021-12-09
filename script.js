@@ -5,12 +5,25 @@ const quoteText = document.getElementById("quote");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const quoteUrl = "https://myquote-generator.netlify.app/";
+const loader = document.getElementById("loader");
 
 // API Quotes
 let apiQuotes = [];
 
+// Loading Function
+function loading() {
+  loader.hidden = false;
+  quoteContainer.hidden = true;
+}
+// Hide Loader
+function complete() {
+  quoteContainer.hidden = true;
+  loader.hidden = false;
+}
+
 // Show New Quotes
 function newQuotes() {
+  //   loading();
   // Get Random Quotes
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
@@ -27,8 +40,9 @@ function newQuotes() {
   } else {
     quoteText.classList.remove("long-quote");
   }
-
+  // Set Quote and hide loader
   quoteText.textContent = quote.text;
+  //   complete();
 }
 
 async function getQuotes() {
