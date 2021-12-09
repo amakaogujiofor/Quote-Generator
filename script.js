@@ -4,6 +4,7 @@ const authorText = document.getElementById("author");
 const quoteText = document.getElementById("quote");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
+const quoteUrl = "https://myquote-generator.netlify.app/";
 
 // API Quotes
 let apiQuotes = [];
@@ -44,9 +45,11 @@ async function getQuotes() {
 
 // Tweet a quote
 function tweetQuote() {
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} 
+  - 
+  ${authorText.textContent}
   
-  Quote generated using @amakaogujiofor's Quote Generator`;
+ From @amakaogujiofor's Quote Generator ${quoteUrl}`;
   window.open(twitterUrl, "_blank");
 }
 
