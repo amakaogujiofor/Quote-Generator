@@ -7,16 +7,19 @@ html {
 }
 
 body {
-  margin: 0;
-  /* padding: 2em; */
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2380d0c7' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: auto;
   max-width: 900px;
   padding: 1.5em 2em;
@@ -55,8 +58,8 @@ body {
 }
 
 .button-container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-top: 1em;
 }
 
@@ -80,6 +83,9 @@ button:active {
   transform: translate(0, 0.3em);
   box-shadow: 0 0.1em rgba(255, 255, 255, 0.226);
 }
+.twitter-button {
+  margin-right: 5em;
+}
 
 .twitter-button:hover {
   color: #38a1f3;
@@ -101,6 +107,13 @@ button:active {
   100% {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(13, 87, 77, 0.993);
 }
 
 /* Media Queries */
