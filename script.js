@@ -49,7 +49,7 @@ function tweetQuote() {
   - 
   ${authorText.textContent}
   
- From @amakaogujiofor's Quote Generator ${quoteUrl}`;
+ From ${quoteUrl} by @amakaogujiofor`;
   window.open(twitterUrl, "_blank");
 }
 
