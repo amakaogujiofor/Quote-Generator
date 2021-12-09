@@ -44,8 +44,10 @@ async function getQuotes() {
 
 // Tweet a quote
 function tweetQuote() {
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
-  window.open(twitterBtn, "_blank");
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}
+  
+  Quote generated using @amakaogujiofor's Quote Generator`;
+  window.open(twitterUrl, "_blank");
 }
 
 twitterBtn.addEventListener("click", tweetQuote);
