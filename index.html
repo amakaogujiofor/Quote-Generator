@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quote Generator</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" href="/icon-suppliers2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,11 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Quote Generator</title>
   </head>
   <body>
-    <h1>Quote Generator</h1>
     <div class="quote-container" id="quote-container">
       <!-- Quote -->
+      <!-- <h1>Quote Generator</h1> -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+          unde.</span
+        >
+      </div>
+
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="author">Monsieur</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
     </div>
   </body>
   <script src="/script.js"></script>
