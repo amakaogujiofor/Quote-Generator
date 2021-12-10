@@ -84,7 +84,7 @@ button:active {
   box-shadow: 0 0.1em rgba(255, 255, 255, 0.226);
 }
 .twitter-button {
-  margin-right: 5em;
+  margin-right: 2em;
 }
 
 .twitter-button:hover {
@@ -110,6 +110,7 @@ button:active {
 }
 
 footer {
+  text-align: center;
   margin-top: 2em;
   font-weight: bold;
   font-size: 1rem;
